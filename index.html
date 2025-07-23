@@ -1,10 +1,135 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My GIS & RS Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My GIS & RS Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+        header {
+            background: #2c3e50;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background: #34495e;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #1abc9c;
+        }
+        section {
+            padding: 40px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        h2 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .about, .contact {
+            text-align: center;
+        }
+        footer {
+            background: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 40px;
+        }
+        input, textarea {
+            width: 80%;
+            max-width: 400px;
+            padding: 10px;
+            margin: 10px auto;
+            display: block;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            padding: 10px 20px;
+            background: #1abc9c;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #16a085;
+        }
+    </style>
 </head>
 <body>
-  <h1>Hello! This is My Portfolio </h1>
+
+<header>
+    <h1>My GIS & Remote Sensing Portfolio</h1>
+    <p>Projects | Maps | Analysis</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#projects">Projects</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="home">
+    <h2>Welcome</h2>
+    <p>Hello! I’m a GIS & Remote Sensing enthusiast. Explore my projects below.</p>
+</section>
+
+<section id="projects">
+    <h2>My Projects</h2>
+    <div class="gallery">
+        <img src="image1.jpg" alt="Project 1">
+        <img src="image2.jpg" alt="Project 2">
+        <img src="image3.jpg" alt="Project 3">
+    </div>
+    <p style="text-align:center; margin-top: 20px;">Replace these images with your own project screenshots.</p>
+</section>
+
+<section id="about" class="about">
+    <h2>About Me</h2>
+    <p>I am passionate about GIS, Remote Sensing, and spatial data analysis. Skilled in tools like QGIS, ArcGIS, and satellite imagery interpretation.</p>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2025 My GIS Portfolio | Powered by GitHub Pages</p>
+</footer>
+
 </body>
 </html>
